@@ -1,7 +1,9 @@
 @media (min-width: 320px) {
-  .total-container {
+  .body {
     background-color: var(--background-color);
-    overflow: hidden;
   }
-
+  .total-container {
+    overflow: hidden;
+    display: grid;
+  }
 }
