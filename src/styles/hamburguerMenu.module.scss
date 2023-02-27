@@ -1,0 +1,29 @@
+@media (min-width: 320px) {
+  .menuHamburger {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    & > * {
+      padding: 1rem;
+    }
+    &.open {
+      transform: translateX(0);
+    }
+  }
+
+  .buttonX {
+    display: flex;
+    justify-content: flex-end;
+    & button {
+      all: unset;
+      color: var(--error-color);
+      font-size: 2rem;
+    }
+  }
+
+}
